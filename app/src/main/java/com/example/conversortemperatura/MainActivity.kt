@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     fun converterTemp(){
     val  temperatura = binding.textEntrada.text.toString().toDouble()
         //variavel / captura informacao do ID / pega string e converte double que é casa decimal
-        
+
     }
 }
 
