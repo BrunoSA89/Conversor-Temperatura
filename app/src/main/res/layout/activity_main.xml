@@ -101,7 +101,7 @@
             android:text="Fahrenheit" />
 
         <RadioButton
-            android:id="@+id/buttonF3"
+            android:id="@+id/buttonK2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Kelvin" />

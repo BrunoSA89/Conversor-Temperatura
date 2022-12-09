@@ -34,7 +34,7 @@ android {
         enabled = true
     }
     /*
-    permite que meu arquivo .kt ouca todos os IDs do meu layout .xml
+    permite que meu arquivo .kt ouça todos os IDs do meu layout .xml
     */
 }
 
