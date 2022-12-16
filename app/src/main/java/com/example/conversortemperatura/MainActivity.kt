@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     fun converterTemp(){
     val  temperatura = binding.textEntrada.text.toString().toDouble()
         //variavel / captura informacao do ID / pega string e converte double que é casa decimal
+
     val gFahrenheit = (temperatura * 1.8) + 32
     val gKelvin  = temperatura + 273
     val cC = temperatura
@@ -42,14 +43,14 @@ class MainActivity : AppCompatActivity() {
     val fF = temperatura
     val kelvinC = temperatura - 273
     val kelvinF = ((temperatura - 273) * 9 / 5 ) + 32
-    val kK = temperatura
+    val kelvinK = temperatura
 
-        when{
-            binding.butonC1.isChecked  && binding.buttonF2.isChecked ->
+        when {
+            binding.butonC1.isChecked && binding.buttonF2.isChecked ->
                 binding.textResultado.setText(".2f".format(gFahrenheit))
             binding.butonC1.isChecked && binding.buttonK2.isChecked ->
                 binding.textResultado.setText(".%2".format(gKelvin))
-            binding.butonC1.isChecked  && binding.buttonC2.isChecked ->
+            binding.butonC1.isChecked && binding.buttonC2.isChecked ->
                 binding.textResultado.setText(".2f".format(cC))
             binding.buttonF1.isChecked && binding.buttonC2.isChecked ->
                 binding.textResultado.setText(".%2".format(fahrenheitG))
@@ -62,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             binding.buttonK1.isChecked && binding.buttonF2.isChecked ->
                 binding.textResultado.setText(".%2".format(kelvinF))
             binding.buttonK1.isChecked && binding.buttonK2.isChecked ->
-                binding.textResultado.setText(".%2".format(kK))
+                binding.textResultado.setText(".%2".format(kelvinK))
         }
     }
 }
